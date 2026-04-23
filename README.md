@@ -21,7 +21,7 @@ Bayes 정리의 4가지 역할부터 conjugate prior·ELBO의 3가지 분해·Re
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Pyro](https://img.shields.io/badge/Pyro-1.8-EC6331?style=flat-square)](https://pyro.ai/)
 [![Docs](https://img.shields.io/badge/Docs-35개-blue?style=flat-square&logo=readthedocs&logoColor=white)](./README.md)
-[![Lines](https://img.shields.io/badge/Lines-17k+-informational?style=flat-square)](./README.md)
+[![Lines](https://img.shields.io/badge/Lines-12.5k+-informational?style=flat-square)](./README.md)
 [![Theorems](https://img.shields.io/badge/Theorems_proven-82개-success?style=flat-square)](./README.md)
 [![Exercises](https://img.shields.io/badge/Exercises-105개-orange?style=flat-square)](./README.md)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square&logo=opensourceinitiative&logoColor=white)](./LICENSE)
@@ -266,7 +266,7 @@ Bayesian ML에 관한 자료는 대부분 **"posterior에서 샘플하세요"** 
 | **GP-UCB regret bound** | $R_T \leq \tilde O(\sqrt{T\gamma_T})$ (Srinivas et al. 2010) — information gain $\gamma_T$ | [Ch6-03](./ch6-bayesian-optimization/03-convergence-analysis.md) |
 | **Total variance decomposition** | $\text{Var}[y^*] = \mathbb{E}_W[\text{Var}(y^*\|W)] + \text{Var}_W[\mathbb{E}(y^*\|W)]$ — aleatoric + epistemic | [Ch7-03](./ch7-advanced-topics/03-epistemic-aleatoric.md) |
 
-> 💡 **챕터별 총 정리 수**: Ch1(13) · Ch2(15) · Ch3(10) · Ch4(14) · Ch5(11) · Ch6(9) · Ch7(10) — 합계 **82개 정리 + 증명**, 약 **17,000+ 라인** 분량.
+> 💡 **챕터별 총 정리 수**: Ch1(13) · Ch2(15) · Ch3(10) · Ch4(14) · Ch5(11) · Ch6(9) · Ch7(10) — 합계 **82개 정리 + 증명**, 약 **12,500+ 라인** 분량.
 
 ---
 
@@ -412,14 +412,14 @@ plt.tight_layout(); plt.show()
 >
 > 🧭 **푸터 네비게이션**: 각 문서 하단에 `◀ 이전 / 📚 README / 다음 ▶` 링크가 항상 제공됩니다. 챕터 경계에서도 자동으로 다음 챕터 첫 문서로 연결되므로 순차 학습이 끊기지 않습니다.
 >
-> ⏱️ **학습 시간 추정**: 문서당 평균 485줄(증명·코드·연습문제 포함) 기준 **약 1~1.5시간**. 전체 35문서는 약 **42~52시간** 상당.
+> ⏱️ **학습 시간 추정**: 문서당 평균 360줄(증명·코드·연습문제 포함) 기준 **약 45분~1시간**. 전체 35문서는 약 **30~40시간** 상당.
 
 ---
 
 ## 🗺️ 추천 학습 경로
 
 <details>
-<summary><b>🟢 "VAE를 구현하지만 ELBO가 왜 그런지 모른다" — VAE 집중 (5일, 약 12~15시간)</b></summary>
+<summary><b>🟢 "VAE를 구현하지만 ELBO가 왜 그런지 모른다" — VAE 집중 (5일, 약 8~12시간)</b></summary>
 
 <br/>
 
@@ -435,7 +435,7 @@ Day 5  Ch3-02~03  β-VAE, CVAE, Normalizing Flow
 </details>
 
 <details>
-<summary><b>🟡 "PyMC를 쓰지만 MCMC의 수학을 모른다" — MCMC 집중 (1주, 약 14~18시간)</b></summary>
+<summary><b>🟡 "PyMC를 쓰지만 MCMC의 수학을 모른다" — MCMC 집중 (1주, 약 10~14시간)</b></summary>
 
 <br/>
 
@@ -452,7 +452,7 @@ Day 7  Ch4-05~06  R̂·ESS, VI vs MCMC 선택 기준
 </details>
 
 <details>
-<summary><b>🟠 "Bayesian NN을 호출하지만 uncertainty 해석을 모른다" — BNN 집중 (1주, 약 14~18시간)</b></summary>
+<summary><b>🟠 "Bayesian NN을 호출하지만 uncertainty 해석을 모른다" — BNN 집중 (1주, 약 10~14시간)</b></summary>
 
 <br/>
 
@@ -469,7 +469,7 @@ Day 7  Ch5-05 + Ch7-03     SWAG/SGLD, Epistemic vs Aleatoric
 </details>
 
 <details>
-<summary><b>🔴 "Bayesian ML을 완전 정복한다" — 전체 정복 (8주, 약 42~52시간)</b></summary>
+<summary><b>🔴 "Bayesian ML을 완전 정복한다" — 전체 정복 (8주, 약 30~40시간)</b></summary>
 
 <br/>
 
