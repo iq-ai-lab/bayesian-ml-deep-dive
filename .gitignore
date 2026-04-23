@@ -1,0 +1,167 @@
+# =============================================================================
+# Bayesian Machine Learning Deep Dive — .gitignore
+# =============================================================================
+
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Distribution / Packaging
+.Python
+build/
+dist/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+MANIFEST
+sdist/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ── Jupyter Notebook ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# ── NumPy / SciPy / PyTorch / JAX cache ──────────────────────────────────────
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.safetensors
+
+# 프레임워크별 캐시
+.torch_cache/
+.jax_cache/
+.pytensor.*/
+.theano.*/
+
+# ── PPL 아티팩트 (PyMC / Stan / NumPyro / Pyro) ──────────────────────────────
+# PyMC / ArviZ — InferenceData, trace
+*.nc
+*.netcdf
+arviz_data/
+pymc_cache/
+.pymc_cache/
+
+# Stan 컴파일 아티팩트
+*.stan.exe
+*.stan.hpp
+*_model_*.cpp
+*_model_*.o
+cmdstanpy_*/
+
+# ── Experiment outputs ───────────────────────────────────────────────────────
+# 생성된 이미지 (posterior density, trace plot, ELBO 곡선, VAE 샘플 등)
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+*.gif
+*.mp4
+
+# 학습 체크포인트 / 실험 결과
+results/
+outputs/
+logs/
+checkpoints/
+samples/
+runs/
+wandb/
+mlruns/
+tb_logs/
+lightning_logs/
+*.log
+*.csv
+*.h5
+*.hdf5
+
+# BO 아티팩트 (BoTorch / Ax)
+ax_experiments/
+botorch_runs/
+
+# ── IDE / Editor ─────────────────────────────────────────────────────────────
+# JetBrains (PyCharm, IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+
+# ── Documentation build ──────────────────────────────────────────────────────
+docs/_build/
+docs/generated/
+site/
+.mkdocs_cache/
+
+# ── Secrets / Credentials ────────────────────────────────────────────────────
+.env.local
+.env.*.local
+secrets.py
+credentials.json
+*.pem
+*.key
+
+# ── Miscellaneous ────────────────────────────────────────────────────────────
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+*.mo
+*.pot
