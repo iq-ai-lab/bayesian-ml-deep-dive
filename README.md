@@ -2,15 +2,37 @@
 
 # 🎲 Bayesian Machine Learning Deep Dive
 
-**"`p(θ|D) ∝ p(D|θ) p(θ)`를 암기하는 것과, 왜 정규화 상수 `p(D) = ∫ p(D|θ) p(θ) dθ`가 계산 불가능해서 VI와 MCMC가 필요한지 증명할 수 있는 것은 다르다"**
+### Bayes 정리
+
+$$p(\theta \mid D) \;\propto\; p(D \mid \theta)\, p(\theta)$$
+
+### 를 **암기하는 것** 과, 왜 정규화 상수
+
+$$p(D) = \int p(D \mid \theta)\, p(\theta)\, d\theta$$
+
+### 가 계산 불가능해서 **VI 와 MCMC** 가 필요한지 증명할 수 있는 것은 **다르다.**
 
 <br/>
 
-> *"VAE의 ELBO를 구현하는 것과 — 왜 $\text{ELBO} = \log p(x) - \text{KL}(q(z|x)\|p(z|x))$의 좌변이 증거이고 우변이 증거 하한이 되는지, reparameterization trick이 왜 편미분 교환을 정당화하는지를 증명할 수 있는 것은 다르다.  
-> Bayesian Neural Network을 호출하는 것과, 왜 MC Dropout이 approximate variational inference(Gal & Ghahramani 2016)이고 Laplace Approximation이 posterior를 Hessian 기반 Gaussian으로 근사하는지를 유도할 수 있는 것은 다르다."*
+> *VAE 의 ELBO 를 **구현하는 것** 과,*
+>
+> $$\mathrm{ELBO} = \log p(x) - \mathrm{KL}\bigl(q(z|x) \,\|\, p(z|x)\bigr)$$
+>
+> *의 좌변이 **증거 (evidence)** 이고 우변이 **증거 하한** 이 되는지, reparameterization trick 이 왜 **편미분 교환을 정당화** 하는지 증명할 수 있는 것은 다르다.*
+>
+> *Bayesian Neural Network 를 **호출하는 것** 과, 왜 **MC Dropout 이 approximate VI** (Gal & Ghahramani 2016) 이고 **Laplace Approximation 이 posterior 를 Hessian 기반 Gaussian** 으로 근사하는지를 유도할 수 있는 것은 다르다.*
 
-Bayes 정리의 4가지 역할부터 conjugate prior·ELBO의 3가지 분해·Reparameterization trick·Metropolis-Hastings의 detailed balance·HMC·Laplace·MC Dropout·SWAG·SGLD·GP 기반 BO까지  
-**"불확실성은 어떻게 수학적으로 정량화되는가"** 라는 질문으로 VAE·BNN·Bayesian Optimization·Probabilistic Programming의 수학적 기반을 끝까지 파헤칩니다
+<br/>
+
+**다루는 정리·기법 (시간순)**
+
+Bayes 1763 *Bayes 정리* · Metropolis 1953 *Metropolis-Hastings* · Geman 1984 *Gibbs sampling* · MacKay 1992 *Laplace Approximation* · Neal 1996 *BNN + HMC* · Jordan 1999 *Variational Inference* · Rasmussen 2006 *Gaussian Process* · Kingma 2013 *VAE = amortized VI* · Welling 2011 *SGLD* · Snoek 2012 *GP-based Bayesian Optimization* · Gal 2016 *MC Dropout = VI* · Maddox 2019 *SWAG*
+
+<br/>
+
+**핵심 질문**
+
+> **불확실성은 어떻게 수학적으로 정량화되는가** — Bayes 정리의 4가지 역할 · conjugate prior · ELBO 의 3가지 분해 · Reparameterization · Metropolis–Hastings detailed balance · HMC · Laplace · MC Dropout · SWAG · SGLD · GP-based BO 까지, VAE · BNN · Bayesian Optimization · Probabilistic Programming 의 수학적 기반을 끝까지 파헤칩니다.
 
 <br/>
 
